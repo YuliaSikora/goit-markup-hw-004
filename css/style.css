@@ -456,7 +456,7 @@ ul {
 }
 .footer-icon {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-beetwen;
   margin: 0;
 }
 .our-work {
