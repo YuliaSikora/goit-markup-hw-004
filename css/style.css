@@ -116,6 +116,8 @@ p {
   margin-left: 50px;
 }
 .header-address a {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -123,14 +125,15 @@ p {
   color: var(--main-text-color);
   text-decoration: none;
   background-color: var(--hero-color);
+  fill: var(--main-text-color);
+}
+.header-icon {
+  margin-right: 10px;
 }
 .header-address a:hover,
 .header-address a:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
-}
-.header-icon {
-  margin-right: 10px;
 }
 
 ul {
@@ -142,7 +145,6 @@ ul {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero.jpg);
   max-width: 1600px;
-  height: 600px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -205,6 +207,7 @@ ul {
 .section-info-icon {
   display: flex;
   margin-bottom: 30px;
+  height: 120px;
   background-color: var(--background-name);
   justify-content: center;
   align-items: center;
@@ -282,6 +285,7 @@ ul {
 .worker-img-item {
   width: 270px;
   margin-left: 30px;
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -306,23 +310,27 @@ ul {
 .title-text-worker {
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: auto;
-  padding-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: var(--hero-color);
+}
+.title-text-worker p {
+  margin-bottom: 16px;
 }
 .links-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-bottom: 30px;
 }
 
 .link-worker {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-
+}
+.link-worker a {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -371,6 +379,9 @@ ul {
 }
 .partners-link {
   margin-left: 30px;
+}
+.partners-link:first-child {
+  margin-left: 0px;
 }
 .partners-icon-svg {
   fill: var(--border-partners);
